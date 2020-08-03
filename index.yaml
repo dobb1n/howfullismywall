@@ -1,0 +1,8 @@
+indexes:
+
+- kind: howfullismywall
+  ancestor: no
+  properties:
+  - name: done
+  - name: priority
+    direction: desc

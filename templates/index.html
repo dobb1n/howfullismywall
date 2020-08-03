@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>{{today}}</h3>
+
+<section class="content", id="counters">
+  <h2>{{ heading }}</h2>
+  
+  
+          <table class="table">
+                  <thead>
+            
+                    <tr>
+                      
+                      <th scope="col">wall</th>
+                      <th scope="col">counter</th>
+                      <th scope="col">website</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+    
+                    {% for counter in counters %}  
+                    <tr>
+                      <th scope="row">{{ counter['wall name'] }}</th>
+                        <td>{{ counter['counter']|safe }}</td>
+                        <td><a href="{{ counter['website'] }}">website</a></td>
+                    </tr>
+                    {% endfor %}
+                    
+                      
+              
+                  </tbody>
+                </table>
+
+
+{% endblock %}
+            
+            
+
+                  
+
+
+
+  
+
