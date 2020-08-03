@@ -23,9 +23,8 @@
     
                     {% for counter in counters %}  
                     <tr>
-                      <th scope="row">{{ counter['wall name'] }}</th>
+                      <th scope="row"><a href="{{ counter['website'] }}">{{ counter['wall name'] }}</a></th>
                         <td>{{ counter['counter']|safe }}</td>
-                        <td><a href="{{ counter['website'] }}">website</a></td>
                     </tr>
                     {% endfor %}
                     
