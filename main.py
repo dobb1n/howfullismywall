@@ -50,6 +50,13 @@ def leeds():
     counters = fetch_counters(filter, operator)
     return render_template('index.html', today=today, title="Leeds", heading="Leeds", counters=counters)
 
+@app.route('/london')
+def london():
+    filter = "london"
+    operator = "="
+    counters = fetch_counters(filter, operator)
+    return render_template('index.html', today=today, title="London", heading="London", counters=counters)
+
 @app.route('/others')
 def others():
     filter = ""
