@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>https://howfullismywall.info</loc>
-    <lastmod>2020-08-03</lastmod>
+    <lastmod>2020-08-04</lastmod>
   </url>
     <url>
     <loc>https://howfullismywall.info/sheffield</loc>
@@ -17,10 +17,13 @@
     <loc>https://howfullismywall.info/leeds</loc>
     <lastmod>2020-08-03</lastmod>
   </url>
-  
+      <url>
+    <loc>https://howfullismywall.info/london</loc>
+    <lastmod>2020-08-04</lastmod>
+  </url>
     <url>
     <loc>https://howfullismywall.info/FAQ</loc>
-    <lastmod>2020-08-03</lastmod>
+    <lastmod>2020-08-04</lastmod>
   </url>
    
     <url>
