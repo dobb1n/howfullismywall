@@ -20,6 +20,7 @@
 /* Page content */
 .content {
   padding: 16px;
+  margin: auto;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -48,3 +49,21 @@
   background: #4caf50;
   width: 0%;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.footer {
+  position: fixed;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  }
