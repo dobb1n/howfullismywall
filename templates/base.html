@@ -36,15 +36,35 @@
    
 
   
+    <nav class="navbar bg-dark navbar-dark fixed-top">
  
-      <div id="navbar">
-        <a href="{{url_for ('sheffield') }}">SHF</a>
-        <a href="{{url_for ('leeds') }}">LDS</a>
-        <a href="{{url_for ('manchester') }}">MCR</a>
-        <a href="{{url_for ('london') }}">LDN</a>
-        <a href="{{url_for ('others') }}">ALL</a>
-        <a href="{{url_for ('FAQ') }}">FAQ</a>
-      </div>
+      <a class="navbar-brand" href="{{url_for ('root') }}">How Full Is My Wall?</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="{{url_for ('sheffield') }}">Sheffield</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{url_for ('leeds') }}">Leeds</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{url_for ('manchester') }}">Manchester</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{url_for ('london') }}">London</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="{{url_for ('FAQ') }}">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
   
     
   
