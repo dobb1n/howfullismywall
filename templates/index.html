@@ -7,7 +7,11 @@
 <section class="content", id="counters">
   <h2>{{ heading }}</h2>
   
+  {% for counter in counters %}  
+  <p><a href="{{ counter['website'] }}">{{ counter['wall name'] }}</a></p>
+  <p>{{ counter['counter']|safe }}</p>
 
+  {% endfor %}
         
                   
 
