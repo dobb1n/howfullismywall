@@ -8,6 +8,7 @@ datastore_client = datastore.Client(project='howfullismywall')
 x = datetime.now()
 today = x.strftime("%A") + " " + x.strftime("%e") + " " + x.strftime("%B")
 
+
 app = Flask(__name__)
 
 #function to get the treatments from the db
@@ -21,6 +22,10 @@ def fetch_counters(filter, operator):
 
     return counters
 
+@app.route('/index2')
+def sayonara():
+    return render_template('nu_index.html', today=today, title="Home")
+            
 @app.route('/')
 @app.route('/index')
 def root():
