@@ -22,12 +22,14 @@ def fetch_counters(filter, operator):
 
     return counters
 
-@app.route('/index2')
+
+@app.route('/')
+@app.route('/index')
 def sayonara():
     return render_template('nu_index.html', today=today, title="Home")
             
-@app.route('/')
-@app.route('/index')
+
+@app.route('/index2')
 def root():
     filter = ""
     operator = "="
